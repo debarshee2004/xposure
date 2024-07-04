@@ -1,0 +1,7 @@
+  apiKey: "AIzaSyCfu9ilF4ZsWLit01DyFmAYXPGjfRMABuE",
+  authDomain: "xposure-52426.firebaseapp.com",
+  projectId: "xposure-52426",
+  storageBucket: "xposure-52426.appspot.com",
+  messagingSenderId: "693610794554",
+  appId: "1:693610794554:web:81a7f321f11803c07cef03",
+  measurementId: "G-D856XCGR2J",

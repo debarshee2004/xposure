@@ -2,11 +2,11 @@
 import React, { useState, FormEvent } from "react";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { auth } from "@/lib/firebase/index";
-
+import { useRouter } from "next/router";
 const SignUp: React.FC = () => {
 	const [email, setEmail] = useState<string>("");
 	const [password, setPassword] = useState<string>("");
-
+	const router = useRouter();
 	const [createUserWithEmailAndPassword, user, loading, error] =
 		useCreateUserWithEmailAndPassword(auth);
 
@@ -17,6 +17,7 @@ const SignUp: React.FC = () => {
 			console.log({ res });
 			setEmail("");
 			setPassword("");
+			router.push("/");
 		} catch (error) {
 			console.log(error);
 		}
